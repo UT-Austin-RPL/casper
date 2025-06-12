@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+
+<style>
+.has-text-red {
+color: #bf5700;
+}
+
+.s {
+color: #d14
+}
+
+.na {
+color: #008080
+}
+
+.nc {
+color: #445588;
+font-weight: bold
+}
+
+.nl {
+color: #990000;
+font-weight: bold
+}
+</style>
+	
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Casper: Inferring Diverse Intents for Assistive Teleoperation with Vision Language Models">
+  <meta name="keywords" content="Assistive Teleoperation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casper: Inferring Diverse Intents for Assistive Teleoperation with Vision Language Models</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="casper.png" type="image/png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<!-- <section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Casper: Inferring Diverse Intents for Assistive Teleoperation with Vision Language Models</h1>
+          
+          <div class="is-size-5 publication-authors">
+		      <span class="author-block" style="font-size: 25px;">Anonymous Authors</span>
+          </div>
+          <div class="item">
+
+            <img src="casper.png" alt="" style="width:10%"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+
+          <!----- Title ----->
+          <h1 class="title is-2 publication-title">
+            Casper 
+            <img src="casper.png" alt="casper icon"
+                 style="height:1.5em; vertical-align:middle; transform: scaleX(-1); margin-left:-0.1em; margin-right:-0.1em;">
+             : Inferring Diverse Intents for Assistive Teleoperation with Vision Language Models
+          </h1>
+
+          <!----- Authors ----->
+          <p class="is-size-5 publication-authors">
+            <a href="#">Huihan&nbsp;Liu<sup>1</sup></a>,
+            <a href="#">Rutav&nbsp;Shah<sup>1</sup></a>,
+            <a href="#">Shuijing&nbsp;Liu<sup>1</sup></a>,
+            <a href="#">Jack&nbsp;Pittenger<sup>1</sup></a>,
+            <a href="#">Mingyo&nbsp;Seo<sup>1</sup></a>,<br>
+            <a href="#">Yuchen&nbsp;Cui<sup>2</sup></a>,
+            <a href="#">Yonatan&nbsp;Bisk<sup>3</sup></a>,
+            <a href="#">Roberto&nbsp;Martín-Martín<sup>1</sup></a>,
+            <a href="#">Yuke&nbsp;Zhu<sup>1</sup></a>
+          </p>
+
+          <!----- Institutions ----->
+          <p class="is-size-5 publication-authors">
+            <sup>1</sup> The&nbsp;University&nbsp;of&nbsp;Texas&nbsp;at&nbsp;Austin &nbsp;
+            <sup>2</sup> The&nbsp;University&nbsp;of&nbsp;California,&nbsp;Los&nbsp;Angeles &nbsp;
+            <br>
+            <sup>3</sup> Carnegie&nbsp;Mellon&nbsp;University
+          </p>
+
+          <!----- Links ----->
+          <div class="publication-links" style="margin-top:1rem;">
+            <a href="#"
+               class="button is-rounded is-dark" style="margin:0 .5rem;">
+              <span class="icon"><i class="fas fa-file-pdf"></i></span><span>arXiv</span>
+            </a>
+            <a href="#"
+               class="button is-rounded is-dark" style="margin:0 .5rem;">
+              <span class="icon"><i class="fab fa-github"></i></span><span>Code (Coming Soon)</span>
+            </a>
+          </div>
+
+          <div class="is-flex is-justify-content-center is-align-items-center" style="gap:2rem; margin-top:0.5rem;">
+            <!-- UT Austin -->
+            <img src="images/ut-austin-logo.png"
+                 alt="UT Austin logo"
+                 style="max-height:60px; width:auto;">
+          
+            <!-- UCLA -->
+            <img src="images/ucla-logo.png"
+                 alt="UCLA logo"
+                 style="max-height:90px; width:auto;">
+          
+            <!-- CMU -->
+            <img src="images/cmu-logo.png"
+                 alt="Carnegie Mellon University logo"
+                 style="max-height:60px; width:auto;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Casper Demo (Audio On!)</h2>
+        <div class="publication-video">
+          <!-- 16×9 responsive container -->
+          <figure class="image is-16by9">
+            <!-- Replace VIDEO_ID with the characters after v= in your YouTube URL -->
+            <iframe
+              class="has-ratio"
+              src="https://www.youtube.com/embed/ZRwjHh1t5kE?rel=0&showinfo=0"
+              title="Casper"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </figure>
+        </div>
+        <br>
+      </div>
+    </div>
+
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Assistive teleoperation, where control is shared between a human and a robot, enables efficient and intuitive human-robot collaboration in diverse and unstructured environments. A central challenge in real-world assistive teleoperation is for the robot to infer a wide range of human intentions from user control inputs and to assist users with correct actions. Existing methods are either confined to simple, predefined scenarios or restricted to task-specific data distributions at training, limiting their support for real-world assistance. We introduce Casper, an assistive teleoperation system that leverages commonsense knowledge embedded in pre-trained visual language models (VLMs) for real-time intent inference and flexible skill execution. Casper incorporates an open-world perception module for a generalized understanding of novel objects and scenes, a VLM-powered intent inference mechanism that leverages commonsense reasoning to interpret snippets of teleoperated user input, and a skill library that expands the scope of prior assistive teleoperation systems to support diverse, long-horizon mobile manipulation tasks. Extensive empirical evaluation, including human studies and system ablations, demonstrates that Casper improves task performance, reduces human cognitive load, and achieves higher user satisfaction than direct teleoperation and assistive teleoperation baselines.   
+	        </p>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Demo</h2>
+        <div class="publication-video">
+          <video muted autoplay controls width="100%">
+            <source src="videos/casper_demo.mp4"  type="video/mp4">
+          </video>
+        </div>
+    </div>
+    </div> -->
+
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+          Casper infers user intents and offers help when confident. Given user teleoperation input, Casper uses VLMs to predict human intent using commonsense reasoning. Upon user confirmation, Casper performs autonomous execution to fulfill the intent using a skill library. Casper's background reasoning runs in parallel with foreground human control to minimize disruption.
+	        </p>
+        </div>
+        <div class="publication-video">
+          <video muted autoplay controls width="100%">
+            <source src="videos/overview.mp4"  type="video/mp4">
+          </video>
+        </div>
+        <br>
+        <br>
+    </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+          Casper has VLM-based intent inference run in parallel with human teleoperation. Casper generates task candidates from observations and infers intent from user inputs among the task candidates, repeating until predictions are self-consistent. Once confirmed by the user, Casper executes the corresponding skill with estimated parameters. 
+	        </p>
+        </div>
+        <div class="publication-video">
+          <video muted autoplay controls width="100%">
+            <source src="videos/method.mp4"  type="video/mp4">
+          </video>
+      </div>
+      <br>
+      <br>
+    </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experiments</h2>
+        <div class="content has-text-justified">
+          <p>
+          We conduct experiments on 3 multi-step mobile manipulation tasks: Toy, Shelf and Door. At each step, the robot disambiguates user intent among multiple plausible goals, selecting the correct one based on user inputs and visual context. 
+	        </p>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="videos/tasks.png" alt=""/>
+          <h2 class="subtitle has-text-centered">
+          </h2>
+        </div>
+        <br>
+
+        <div class="content has-text-justified">
+          <p>
+            We conducted an IRB-approved user study with N=13 participants, all of whom gave informed consent. Participants completed a practice session before completing each method in randomized order. After each, they answered user satisfaction and NASA-TLX questionnaires.
+	        </p>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="videos/human_study.png" alt="" style="width:100%; height:auto;"/>
+          <h2 class="subtitle has-text-centered">
+          </h2>
+        </div>
+        <br>
+
+        <div class="content has-text-justified">
+          <p>
+            <strong>User study: user workload and user satisfaction.</strong> Casper consistently outperforms the baselines in terms of user workload (left) and user satisfaction (right) with statistical significance. Note that for user satisfaction scores, ''assist helpfully'' and ''correct intent'' are not applicable to Full Teleop.
+	        </p>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="videos/results-user.png" alt=""/>
+          <h2 class="subtitle has-text-centered">
+          </h2>
+        </div>
+        <br>
+
+        <div class="content has-text-justified">
+          <p>
+            <strong>User study: task success rate and completion time.</strong> Casper outperforms baselines in both task success and completion time.
+	        </p>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="videos/results-success.png" alt="" style="width:50%; height:auto;"/>
+          <h2 class="subtitle has-text-centered">
+          </h2>
+        </div>
+        <br>
+
+        <div class="content has-text-justified">
+          <p>
+            <strong>Quantitative results from unit testing and ablation studies:</strong> 
+            <br>
+            <strong>Left</strong>: Casper outperforms all baselines in intent inference success rate. Note that no STD is reported for deterministic baselines. The ablation of Casper vs. Capser - No Visual Prompting (VP) highlights the benefit of visual prompting. 
+            <br>
+
+            <strong>Middle</strong>: Success rates improve with longer teleoperation history. 
+            <br>
+
+            <strong>Right</strong>: Removing confidence estimation increases false prediction rates across all history lengths.
+            <br>
+	        </p>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="videos/ablations.png" alt=""/>
+          <h2 class="subtitle has-text-centered">
+          </h2>
+        </div>
+        <br>
+    </div>
+    </div>
+<!-- 
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            Casper infers user intents and offers help when confident. Given user teleoperation input, Casper uses VLMs to predict human intent using commonsense reasoning. Upon user confirmation, Casper performs autonomous execution to fulfill the intent using a skill library. Casper's background reasoning runs in parallel with foreground human control to minimize disruption.
+	        </p>
+          <br>
+        </div>
+        <div class="publication-video">
+          <video muted autoplay controls width="100%">
+            <source src="videos/overview.mp4"  type="video/mp4">
+          </video>
+        </div>
+        <br>
+        <br>
+      </div>
+      </div> -->
+
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">BibTeX</h2>
+          <pre><code>
+        </code></pre>
+        </div>
+      </div>
+
+</body>
+</html>
